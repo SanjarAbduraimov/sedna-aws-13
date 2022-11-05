@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.container-main{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2018/02/21/sedona-arizona-wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+/* navigation styling */
+.navbar{
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    font-size: 19px;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar h3{
+    width: 10%;
+    float: left;
+    color: #e6e6e6;
+}
+
+.navbar h3 span{
+    color: #fff;
+}
+
+.navbar ul{
+    width: 70%;
+    float: left;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar li a{
+    transition: 0.3s;
+}
+
+.navbar li a:hover{
+    padding: 43px 20px;
+    margin: -43px -20px;
+    background-color: #ff000057;
+    box-shadow: 10px 10px 20px #ffbb00dc;
+}
+
+.navbar .connect-side{
+    float: right;
+    margin: -5px 0;
+}
+
+.navbar .connect-side button{
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 19px;
+    border: 1px solid currentColor;
+    background-color: inherit;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.navbar .connect-side button:hover{
+    background-color: #f00;
+    border: 1px solid #f00;
+}
+
+/* main section styling */
+.main{
+    text-align: center;
+    padding-top: 90px;
+}
+
+h1{
+    font-size: 51px;
+}
+
+.main p{
+    padding: 50px 0;
+}
+
+.main button{
+    margin: 0 10px;
+    font-size: 21px;
+    background-color: inherit;
+    border-radius: 50px;
+    border: 1px solid #f00;
+    position: relative;
+    overflow: hidden;
+}
+
+.main button a{
+    display: inline-block;
+    padding: 20px 50px;
+    text-shadow: 1px 1px 10px #f00;
+    color: #f00;
+    text-transform: uppercase;
+}
+
+/* by myself, idea */
+.main button .first:hover:before{
+    left: 0;
+    transition: .8s;
+}
+
+.main button .first::before{
+    position: absolute;
+    color: #fff;
+    content: 'Download';
+    text-align: center;
+    padding-top: 18px;
+    text-shadow: 6px 6px 3px #6f3626;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    background-color: #f00;
+    z-index: 20;
+}
+
+.main button .last:hover:before{
+    right: 0;
+    transition: .8s;
+}
+
+.main button .last::before{
+    position: absolute;
+    color: #fff;
+    content: 'Learn More';
+    text-align: center;
+    padding-top: 18px;
+    text-shadow: 6px 6px 3px #6f3626;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    background-color: #f00;
+    z-index: 20;
+}
